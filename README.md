@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 유저 시나리오
+나라별, 기업별 탄소배출량과 탄소세를 공개적으로 조회 가능
+
+반응형 규칙|	max-width:1200px, 이하 뷰포트에서는 래핑
+Monthly Trend |	누적형, 최신 월 최정점
+Range 프리셋 |	3/6/9/12
+탄소세	| $10 / tCO₂e, USD 고정
+쓰기 실패율 | 15% (create/update만)
+가정 | 인증/DB 없음, 메모리 내 시뮬레이션
 
 ## Getting Started
 
@@ -20,14 +28,6 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
