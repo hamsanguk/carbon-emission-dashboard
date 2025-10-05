@@ -1,16 +1,11 @@
-## 유저 시나리오
-나라별, 기업별 탄소배출량과 탄소세를 공개적으로 조회 가능
-
-반응형 규칙|	max-width:1200px, 이하 뷰포트에서는 래핑
-Monthly Trend |	누적형, 최신 월 최정점
-Range 프리셋 |	3/6/9/12
-탄소세	| $10 / tCO₂e, USD 고정
-쓰기 실패율 | 15% (create/update만)
-가정 | 인증/DB 없음, 메모리 내 시뮬레이션
+## Carbon Emission Dashboard
+- Carbon Emission Dashboard는 기업의 월별 온실가스 배출량을 시각화하고, 분기별 탄소세를 예측할 수 있는 웹 기반 대시보드입니다.
+- 임원과 매니저가 자사 및 계열사의 배출 추이를 한눈에 파악하고, 향후 납부해야 할 탄소세를 사전에 계획할 수 있도록 설계되었습니다.
+- 또한, 누구나 공개적으로 기업별 배출 현황을 비교·조회할 수 있는 투명한 환경 데이터 플랫폼을 지향합니다.
 
 ## Getting Started
 
-First, run the development server:
+터미널에 ls 를 입력하고 package.json이 보인다면 npm i
 
 ```bash
 npm run dev
@@ -28,9 +23,9 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## 향후 확장 가능성
+- 실제 API 연동 (NestJS + PostgreSQL 등)
 
-## Deploy on Vercel
+- 배출권 거래 및 탄소 크레딧 토큰화 기능
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 사용자 인증 기반 대시보드 개인화
